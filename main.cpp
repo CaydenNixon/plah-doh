@@ -7,12 +7,12 @@ int main()
     sf::RenderWindow window(sf::VideoMode(windowSize.x, windowSize.y), "plah doh");
     sf::Vector2f size(100, 100);
 
-    window.setFramerateLimit(-1);
+    window.setFramerateLimit(120);
 
     sf::Vector2f position(1, 1);
 
     sf::Texture texture;
-    texture.loadFromFile("FetPest.PNG");
+    texture.loadFromFile("FetPest.jfif");
     sf::Sprite sprite;
     sprite.setScale(size.x / texture.getSize().x, size.y / texture.getSize().y);
     sprite.setTexture(texture);
